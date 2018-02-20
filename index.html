@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="icon" type="image/png" href="images/trophy.png">
   <meta charset="UTF-8">
   <title>Champions</title>
   <link rel="stylesheet" type="text/css" href="normalize.css">
@@ -9,169 +10,162 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-
   <header>
     <article class="user-info">
-    <img src="images/downarrow.png" alt="" class="down-arrow">
-    <p>Eliud Kipchoge</p>
-    <img src="images/user.png" class="user">
-    <img src="images/logo.png" class="logo">
-  </article>
+      <img src="images/downarrow.png" alt="" class="down-arrow">
+      <p>Eliud Kipchoge</p>
+      <img src="images/user.png" class="user">
+      <img src="images/logo.png" class="logo">
+    </article>
     <article class="hidden-menu">
       <p>MENU</p>
-      <img src="images/events.png">
+      <img src="images/events.png" class="mobile-menu">
     </article>
     <ul>
-      <li class="athletes-li"><img src="images/athletes.png" alt=""> ATHLETES</li>
-      <li><img src="images/events.png" alt="">EVENTS</li>
-      <li><img src="images/rankings.png" alt="">RANKINGS</li>
+      <li tabindex='0' aria-label="link to athlete profiles" class="athletes-li"><img src="images/athletes.png" > ATHLETES</li>
+      <li tabindex='0' aria-label="link to the list of track and field events"><img src="images/events.png" >EVENTS</li>
+      <li tabindex='0' aria-label="link to athlete rankings"><img src="images/rankings.png" >RANKINGS</li>
     </ul>
   </header>
-
   <section class="section__main-section">
-    <h1>Athletes</h1>
+    <h1 tabindex="0" aria-label="the athletes section">Athletes</h1>
     <section class="cards">
-      <!-- <section class="section__first-row"> -->
-        <section class="individual__cards">
-          <article class="header__card-1 header__card">
-            <img src="images/arrowblack.png">
-            <p class="header__card-p world">World</p>
-            <p class="header__card-p">Records</p>
-            <p class="world-records">27</p>
-          </article>
-          <article class="article__card-body">
-            <h2 class="h2__athlete-name">Haile Gebrselassie</h2>
-            <p class="p__personal-record">Marathon: 2:03:59.28</p>
-            <p class="p__body-link"><a href="https://www.iaaf.org/athletes/ethiopia/haile-gebrselassie-8774" title="link to Haile Gebrselassie's IAAF.org profile" target="_blank">IAAF.org Profile</a></p>
-            <p class="p__country">ETHIOPIA</p>
-            <h2 class="h2__best-event">Best Event: Marathon</h2>
-            <h3>Gold Medals</h3>
-            <p class="p__medal-count">10</p>
-          </article>
-        </section>
-        <section class="individual__cards">
-          <article class="header__card-2 header__card">
-            <img src="images/arrowblack.png">
-            <p class="header__card-p world">World</p>
-            <p class="header__card-p">Records</p>
-            <p class="world-records">05</p>
-          </article>
-          <article class="article__card-body">
-            <h2 class="h2__athlete-name">Kenenisa Bekele</h2>
-            <p class="p__personal-record">Marathon: 2:03:03</p>
-            <p class="p__body-link"><a href="https://www.iaaf.org/athletes/ethiopia/kenenisa-bekele-138200" title="link to Kenenisa Bekele's IAAF.org profile" target="_blank">IAAF.org Profile</a></p>
-            <p class="p__country">ETHIOPIA</p>
-            <h2 class="h2__best-event">Best Event: XC</h2>
-            <h3>Gold Medals</h3>
-            <p class="p__medal-count">23</p>
-          </article>
-        </section>
-        <section class="individual__cards">
-          <article class="header__card-3 header__card">
-            <img src="images/arrowblack.png">
-            <p class="header__card-p world">World</p>
-            <p class="header__card-p">Records</p>
-            <p class="world-records">05</p>
-          </article>
-          <article class="article__card-body">
-            <h2 class="h2__athlete-name">Hicham El Guerrouj</h2>
-            <p class="p__personal-record">Mile: 3:43.3</p>
-            <p class="p__body-link"><a href="https://www.iaaf.org/athletes/morocco/hicham-el-guerrouj-9824" title="link to the IAAF.org profile for Hicham El Guerrouj" target="_blank">IAAF.org Profile</a></p>
-            <p class="p__country">MOROCCO</p>
-            <h2 class="h2__best-event">Best Event: 1500 m</h2>
-            <h3>Gold Medals</h3>
-            <p class="p__medal-count">09</p>
-          </article>
-        </section>
-        <section class="individual__cards">
-          <article class="header__card-4 header__card">
-            <img src="images/arrowblack.png">
-            <p class="header__card-p world">World</p>
-            <p class="header__card-p">Records</p>
-            <p class="world-records">03</p>
-          </article>
-          <article class="article__card-body">
-            <h2 class="h2__athlete-name">Joan Benoit</h2>
-            <p class="p__personal-record">Marathon: 2:21:21</p>
-            <p class="p__body-link"><a href="https://www.iaaf.org/athletes/united-states/joan-samuelson-65193" title="link to the IAAF.org profile for Joan Benoit" target="_blank">IAAF.org Profile</a></p>
-            <p class="p__country">U.S.A.</p>
-            <h2 class="h2__best-event">Best Event: Marathon</h2>
-            <h3>Gold Medals</h3>
-            <p class="p__medal-count">02</p>
-          </article>
-        </section>
-        <!-- </section> -->
-
-        <!-- <section class="section__second-row"> -->
-          <section class="individual__cards">
-            <article class="header__card-5 header__card">
-              <img src="images/arrowblack.png">
-              <p class="header__card-p world">World</p>
-              <p class="header__card-p">Records</p>
-              <p class="world-records">08</p>
-            </article>
-            <article class="article__card-body">
-              <h2 class="h2__athlete-name">Genzebe Dibaba</h2>
-              <p class="p__personal-record">Mile: 4:13.31</p>
-              <p class="p__body-link"><a href="https://www.iaaf.org/athletes/ethiopia/genzebe-dibaba-226511" title="link to the IAAF.org profile for Genzebe Dibaba" target="_blank">IAAF.org Profile</a></p>
-              <p class="p__country">ETHIOPIA</p>
-              <h2 class="h2__best-event">Best Event: Mid-Distance</h2>
-              <h3>Gold Medals</h3>
-              <p class="p__medal-count">07</p>
-            </article>
-          </section>
-          <section class="individual__cards">
-            <article class="header__card-6 header__card">
-              <img src="images/arrowblack.png">
-              <p class="header__card-p world">World</p>
-              <p class="header__card-p">Records</p>
-              <p class="world-records">18</p>
-            </article>
-            <article class="article__card-body">
-              <h2 class="h2__athlete-name">Emil Zátopek</h2>
-              <p class="p__personal-record">10000 m: 28:54.2</p>
-              <p class="p__body-link"><a href="https://www.iaaf.org/athletes/czechoslovakia/emil-zatopek-198350" title="link to the IAAF.org profile for Emil Zatopek" target="_blank">IAAF.org Profile</a></p>
-              <p class="p__country">CZECHOSLOVAKIA</p>
-              <h2 class="h2__best-event">Best Event: 10000 m</h2>
-              <h3>Gold Medals</h3>
-              <p class="p__medal-count">07</p>
-            </article>
-          </section>
-          <section class="individual__cards">
-            <article class="header__card-7 header__card">
-              <img src="images/arrowblack.png">
-              <p class="header__card-p world">World</p>
-              <p class="header__card-p">Records</p>
-              <p class="world-records">01</p>
-            </article>
-            <article class="article__card-body">
-              <h2 class="h2__athlete-name">Tirunesh Dibaba</h2>
-              <p class="p__personal-record">5000 m: 14:11.15</p>
-              <p class="p__body-link"><a href="https://www.iaaf.org/athletes/ethiopia/tirunesh-dibaba-181712" title="link to the IAAF.org profile for Tirunesh Dibaba" target="_blank">IAAF.org Profile</a></p>
-              <p class="p__country">ETHIOPIA</p>
-              <h2 class="h2__best-event">Best Event: 10000 m</h2>
-              <h3>Gold Medals</h3>
-              <p class="p__medal-count">14</p>
-            </article>
-          </section>
-          <section class="individual__cards">
-            <article class="header__card-8 header__card">
-              <img src="images/arrowblack.png">
-              <p class="header__card-p world">World</p>
-              <p class="header__card-p">Records</p>
-              <p class="world-records">03</p>
-            </article>
-            <article class="article__card-body">
-              <h2 class="h2__athlete-name">Paula Radcliffe</h2>
-              <p class="p__personal-record">Marathon: 2:15:25</p>
-              <p class="p__body-link"><a href="https://www.iaaf.org/athletes/great-britain-ni/paula-radcliffe-62914" title="link to the IAAF.org profile for Paula Radcliffe" target="_blank">IAAF.org Profile</a></p>
-              <p class="p__country">ENGLAND</p>
-              <h2 class="h2__best-event">Best Event: Marathon</h2>
-              <h3>Gold Medals</h3>
-              <p class="p__medal-count">01</p>
-            </article>
-          </section>
-
-        </section>
-      </body>
-      </html>
+      <section class="individual__cards">
+        <article class="header__card-1 header__card" tabindex='0' aria-label="profile for Haile Gebrselassie">
+          <img src="images/arrowblack.png">
+          <p class="header__card-p world">World</p>
+          <p class="header__card-p">Records</p>
+          <p class="world-records">27</p>
+        </article>
+        <article class="article__card-body">
+          <h2 class="h2__athlete-name">Haile Gebrselassie</h2>
+          <p class="p__personal-record">Marathon: 2:03:59.28</p>
+          <p class="p__body-link"><a href="https://www.iaaf.org/athletes/ethiopia/haile-gebrselassie-8774" title="link to Haile Gebrselassie's IAAF.org profile" target="_blank">IAAF.org Profile</a></p>
+          <p class="p__country">ETHIOPIA</p>
+          <h2 class="h2__best-event">Best Event: Marathon</h2>
+          <h3 tabindex='0' aria-label="Haile gebrselassie has 10 gold medals">Gold Medals</h3>
+          <p class="p__medal-count">10</p>
+        </article>
+      </section>
+      <section class="individual__cards">
+        <article class="header__card-2 header__card" tabindex='0' aria-label="profile for Kenenisa Bekele">
+          <img src="images/arrowblack.png">
+          <p class="header__card-p world">World</p>
+          <p class="header__card-p">Records</p>
+          <p class="world-records">05</p>
+        </article>
+        <article class="article__card-body">
+          <h2 class="h2__athlete-name">Kenenisa Bekele</h2>
+          <p class="p__personal-record">Marathon: 2:03:03</p>
+          <p class="p__body-link"><a href="https://www.iaaf.org/athletes/ethiopia/kenenisa-bekele-138200" title="link to Kenenisa Bekele's IAAF.org profile" target="_blank">IAAF.org Profile</a></p>
+          <p class="p__country">ETHIOPIA</p>
+          <h2 class="h2__best-event">Best Event: XC</h2>
+          <h3 tabindex='0' aria-label="Kenenisa Bekele has 10 gold medals">Gold Medals</h3>
+          <p class="p__medal-count">23</p>
+        </article>
+      </section>
+      <section class="individual__cards">
+        <article class="header__card-3 header__card" tabindex='0' aria-label="profile for Hicham El Guerrouj">
+          <img src="images/arrowblack.png">
+          <p class="header__card-p world">World</p>
+          <p class="header__card-p">Records</p>
+          <p class="world-records">05</p>
+        </article>
+        <article class="article__card-body">
+          <h2 class="h2__athlete-name">Hicham El Guerrouj</h2>
+          <p class="p__personal-record">Mile: 3:43.3</p>
+          <p class="p__body-link"><a href="https://www.iaaf.org/athletes/morocco/hicham-el-guerrouj-9824" title="link to the IAAF.org profile for Hicham El Guerrouj" target="_blank">IAAF.org Profile</a></p>
+          <p class="p__country">MOROCCO</p>
+          <h2 class="h2__best-event">Best Event: 1500 m</h2>
+          <h3 tabindex='0' aria-label="Hicham El Guerrouj has 10 gold medals">Gold Medals</h3>
+          <p class="p__medal-count">09</p>
+        </article>
+      </section>
+      <section class="individual__cards">
+        <article class="header__card-4 header__card" tabindex='0' aria-label="profile for Joan Benoit">
+          <img src="images/arrowblack.png">
+          <p class="header__card-p world">World</p>
+          <p class="header__card-p">Records</p>
+          <p class="world-records">03</p>
+        </article>
+        <article class="article__card-body">
+          <h2 class="h2__athlete-name">Joan Benoit</h2>
+          <p class="p__personal-record">Marathon: 2:21:21</p>
+          <p class="p__body-link"><a href="https://www.iaaf.org/athletes/united-states/joan-samuelson-65193" title="link to the IAAF.org profile for Joan Benoit" target="_blank">IAAF.org Profile</a></p>
+          <p class="p__country">U.S.A.</p>
+          <h2 class="h2__best-event">Best Event: Marathon</h2>
+          <h3 tabindex='0' aria-label="Joan Benoit has 10 gold medals">Gold Medals</h3>
+          <p class="p__medal-count">02</p>
+        </article>
+      </section>
+      <section class="individual__cards">
+        <article class="header__card-5 header__card" tabindex='0' aria-label="profile for Genzebe Dibaba">
+          <img src="images/arrowblack.png">
+          <p class="header__card-p world">World</p>
+          <p class="header__card-p">Records</p>
+          <p class="world-records">08</p>
+        </article>
+        <article class="article__card-body">
+          <h2 class="h2__athlete-name">Genzebe Dibaba</h2>
+          <p class="p__personal-record">Mile: 4:13.31</p>
+          <p class="p__body-link"><a href="https://www.iaaf.org/athletes/ethiopia/genzebe-dibaba-226511" title="link to the IAAF.org profile for Genzebe Dibaba" target="_blank">IAAF.org Profile</a></p>
+          <p class="p__country">ETHIOPIA</p>
+          <h2 class="h2__best-event">Best Event: Mid-Distance</h2>
+          <h3 tabindex='0' aria-label="Genzebe Dibaba has 10 gold medals">Gold Medals</h3>
+          <p class="p__medal-count">07</p>
+        </article>
+      </section>
+      <section class="individual__cards">
+        <article class="header__card-6 header__card" tabindex='0' aria-label="profile for Emil Zatopek">
+          <img src="images/arrowblack.png">
+          <p class="header__card-p world">World</p>
+          <p class="header__card-p">Records</p>
+          <p class="world-records">18</p>
+        </article>
+        <article class="article__card-body">
+          <h2 class="h2__athlete-name">Emil Zátopek</h2>
+          <p class="p__personal-record">10000 m: 28:54.2</p>
+          <p class="p__body-link"><a href="https://www.iaaf.org/athletes/czechoslovakia/emil-zatopek-198350" title="link to the IAAF.org profile for Emil Zatopek" target="_blank">IAAF.org Profile</a></p>
+          <p class="p__country">CZECHOSLOVAKIA</p>
+          <h2 class="h2__best-event">Best Event: 10000 m</h2>
+          <h3 tabindex='0' aria-label="Emil Zatopek has 10 gold medals">Gold Medals</h3>
+          <p class="p__medal-count">07</p>
+        </article>
+      </section>
+      <section class="individual__cards">
+        <article class="header__card-7 header__card" tabindex='0' aria-label="profile for Tirunesh Dibaba">
+          <img src="images/arrowblack.png">
+          <p class="header__card-p world">World</p>
+          <p class="header__card-p">Records</p>
+          <p class="world-records">01</p>
+        </article>
+        <article class="article__card-body">
+          <h2 class="h2__athlete-name">Tirunesh Dibaba</h2>
+          <p class="p__personal-record">5000 m: 14:11.15</p>
+          <p class="p__body-link"><a href="https://www.iaaf.org/athletes/ethiopia/tirunesh-dibaba-181712" title="link to the IAAF.org profile for Tirunesh Dibaba" target="_blank">IAAF.org Profile</a></p>
+          <p class="p__country">ETHIOPIA</p>
+          <h2 class="h2__best-event">Best Event: 10000 m</h2>
+          <h3 tabindex='0' aria-label="Tirunesh Dibaba has 10 gold medals">Gold Medals</h3>
+          <p class="p__medal-count">14</p>
+        </article>
+      </section>
+      <section class="individual__cards">
+        <article class="header__card-8 header__card" tabindex='0' aria-label="profile for Paula Radcliffe">
+          <img src="images/arrowblack.png">
+          <p class="header__card-p world">World</p>
+          <p class="header__card-p">Records</p>
+          <p class="world-records">03</p>
+        </article>
+        <article class="article__card-body">
+          <h2 class="h2__athlete-name">Paula Radcliffe</h2>
+          <p class="p__personal-record">Marathon: 2:15:25</p>
+          <p class="p__body-link"><a href="https://www.iaaf.org/athletes/great-britain-ni/paula-radcliffe-62914" title="link to the IAAF.org profile for Paula Radcliffe" target="_blank">IAAF.org Profile</a></p>
+          <p class="p__country">ENGLAND</p>
+          <h2 class="h2__best-event">Best Event: Marathon</h2>
+          <h3 tabindex='0' aria-label="Paula Radcliffe has 10 gold medals">Gold Medals</h3>
+          <p class="p__medal-count">01</p>
+        </article>
+      </section>
+    </section>
+  </body>
+  </html>
